@@ -1,0 +1,15 @@
+.cards {
+}
+
+.cards__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card {
+}
+
+.card__image {
+  width: 413px;
+  height: 413px;
+}
