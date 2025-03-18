@@ -1,8 +1,5 @@
 .profile {
-  display: flex;
-  max-width: 1280px;
   margin: 34px auto 0;
-  justify-content: center;
   padding-bottom: 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -32,6 +29,11 @@
   align-items: center;
   border: none;
   gap: 8px;
+  opacity: 60%;
+}
+
+.profile__edit-btn:hover {
+  opacity: 100%;
 }
 
 .profile__add-btn {
@@ -45,4 +47,8 @@
   border-radius: 8px;
   padding: 18px 32px;
   color: rgba(252, 245, 229, 1);
+}
+
+.profile__add-btn:hover {
+  background-color: rgba(33, 33, 33, 0.8);
 }
