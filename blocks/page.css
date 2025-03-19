@@ -5,7 +5,18 @@
 
 .page__section {
   max-width: 1280px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
+}
+
+@media screen and (max-width: 630px) {
+  .page__section {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    align-items: center;
+  }
 }
