@@ -4,6 +4,6 @@
 
 ## @import, and @media CSS were used as a relative substitute to link tags. It also prioritizes Figma prototype to VS Code integrations. Alot of the font properties, margins, and padding were directly refernced from the figma design provided...
 
-![alt text](http://url/to/Screenshot2025-03-20134023.png)
-![alt text](http://url/to/Screenshot2025-03-20134033.png)
+![alt text](./images/spots-figma-desktop.png)
+![alt text](./images/spots-figma-mobile.png)
 [spots page web-link](https://simehale.github.io/se_project_spots/)
