@@ -6,6 +6,7 @@
 
 .page__section {
   max-width: 1280px;
+  min-width: 288px;
   margin: 0 auto;
   display: flex;
   box-sizing: border-box;
@@ -16,7 +17,7 @@
   .page__section {
     display: flex;
     flex-direction: column;
-    width: 288px;
+    max-width: 288px;
     align-items: center;
   }
 }
