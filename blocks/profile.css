@@ -19,11 +19,13 @@
 
 .profile__name {
   margin: 0;
-  max-width: 370px;
+  max-width: 420px;
+  margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
+  padding: 0 0 3.1px;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -32,12 +34,14 @@
 }
 
 .profile__description {
-  margin-top: 12px;
-  max-width: 370px;
+  margin-top: 0;
+  max-width: 420px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  padding: 0 0 2px;
+  margin-bottom: 16px;
   color: rgba(33, 33, 33, 0.7);
   display: -webkit-box;
   overflow: hidden;
@@ -48,11 +52,14 @@
 
 .profile__edit-btn {
   display: flex;
-  margin-top: auto;
+  margin-top: 0;
   background: none;
   align-items: center;
   border: none;
   gap: 8px;
+  position: relative;
+  padding: 0;
+  top: -0.8px;
   opacity: 60%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -67,19 +74,25 @@
 .profile__add-btn {
   display: flex;
   margin-left: auto;
-  display: flex;
   align-self: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
-  min-width: 149px;
+  min-width: 157px;
+  height: 52px;
   background: rgba(33, 33, 33, 1);
   border: none;
   border-radius: 8px;
-  padding: 18px 32px;
   color: rgba(252, 245, 229, 1);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+}
+
+.profile__add-icon {
+  width: 12px;
+  height: 12px;
 }
 
 .profile__add-btn:hover {
@@ -90,11 +103,23 @@
   .profile {
     margin-top: 20px;
     max-width: 288px;
+    align-items: center;
   }
   .profile__avatar {
     margin: 0 0 12px;
     width: 80px;
     height: 80px;
+  }
+  .profile__column {
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  .profile__name {
+    margin-bottom: 6px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
   }
   .profile__description {
     text-align: center;
@@ -111,11 +136,5 @@
     align-self: center;
     width: 100%;
     justify-content: center;
-  }
-  .profile__name {
-    margin-bottom: 6px;
-    max-width: 265px;
-    font-size: 20px;
-    text-align: center;
   }
 }
