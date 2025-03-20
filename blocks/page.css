@@ -1,5 +1,7 @@
 .page {
   background-color: #fcf5e5;
+  max-width: 1440px;
+  min-width: 320px;
   min-height: 110vh;
   color: rgba(33, 33, 33, 1);
 }

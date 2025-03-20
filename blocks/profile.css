@@ -1,4 +1,5 @@
 .profile {
+  display: flex;
   margin: 34px auto 0;
   padding-bottom: 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
@@ -15,11 +16,13 @@
 .profile__column {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  max-width: 420px;
+  width: 45%;
 }
 
 .profile__name {
   margin: 0;
-  max-width: 420px;
   margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -35,7 +38,6 @@
 
 .profile__description {
   margin-top: 0;
-  max-width: 420px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -124,8 +126,10 @@
   .profile__description {
     text-align: center;
     margin: 0 0 32px;
+    padding: 0 0 2px;
     font-size: 16px;
     text-align: center;
+    width: 100%;
   }
   .profile__edit-btn {
     justify-content: center;
