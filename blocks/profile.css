@@ -32,6 +32,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  color: rgba(33, 33, 33, 0.7);
 }
 
 .profile__edit-btn {
@@ -74,12 +75,8 @@
   background-color: rgba(33, 33, 33, 0.8);
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 640px) {
   .profile {
-    display: flex;
-    flex-direction: column;
-    width: 288px;
-    align-items: center;
     margin-top: 40px;
   }
   .profile__avatar {
