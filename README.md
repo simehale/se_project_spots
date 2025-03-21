@@ -7,3 +7,4 @@
 ![alt text](./images/spots-figma-desktop.png)
 ![alt text](./images/spots-figma-mobile.png)
 [spots page web-link](https://simehale.github.io/se_project_spots/)
+[video recording](https://youtu.be/MPubiX4i22I)
