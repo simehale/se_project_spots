@@ -1,0 +1,52 @@
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal {
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  max-width: 730px;
+  max-height: 408px;
+}
+
+.modal__container {
+  display: flex;
+  margin: 32px 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.modal__close-btn {
+  margin: 0 auto;
+}
+
+.modal__title {
+  margin: 0;
+}
+
+.modal__form {
+  margin: 32px 0 0 0;
+  gap: 32px;
+  flex-direction: row;
+}
+
+.modal__label {
+  margin: 0;
+  width: 100%;
+}
+
+.modal__input {
+  margin-top: 8px;
+  flex: 100%;
+}
+
+.modal__save-btn {
+  margin: 0;
+  max-width: 156px;
+  padding: 18px 58px;
+}
