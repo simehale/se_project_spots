@@ -25,3 +25,29 @@ const intitialCards = [
   },
 ];
 console.log(intitialCards);
+
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const editProfileBtn = document.querySelector(".profile__edit-btn");
+const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
+
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostBtn = document.querySelector(".profile__add-btn");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+
+editProfileBtn.addEventListener("click", function () {
+  editProfileBtn.classList.add("edit-profile-modal");
+  editProfileModal.classList.add("modal_is-opened");
+  console.log("button is clicked");
+});
+editProfileCloseBtn.addEventListener("click", function () {
+  editProfileModal.classList.remove("modal_is-opened");
+});
+
+newPostBtn.addEventListener("click", function () {
+  newPostBtn.classList.add("new-post-modal");
+  newPostModal.classList.add("modal_is-opened");
+  console.log("button is clicked");
+});
+newPostCloseBtn.addEventListener("click", function () {
+  newPostModal.classList.remove("modal_is-opened");
+});
