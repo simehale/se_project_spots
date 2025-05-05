@@ -21,6 +21,7 @@
 
 .modal__container {
   border-radius: 8px;
+  box-sizing: border-box;
   max-width: 730px;
   width: 100%;
   position: relative;
@@ -43,6 +44,10 @@
 
 .modal__close-icon {
   width: 100%;
+}
+
+.modal__close-icon:hover {
+  opacity: 40%;
 }
 
 .modal__title {
@@ -102,6 +107,10 @@
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
+}
+
+.modal__save-btn:hover {
+  opacity: 80%;
 }
 
 @media screen and (max-width: 640px) {
