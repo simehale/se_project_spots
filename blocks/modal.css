@@ -43,11 +43,11 @@
 }
 
 .modal__close-icon {
-  width: 100%;
+  width: 40%;
 }
 
 .modal__close-icon:hover {
-  opacity: 40%;
+  opacity: 100%;
 }
 
 .modal__title {
@@ -56,14 +56,13 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
-  letter-spacing: 0%;
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
 .modal__form {
   width: 100%;
-  margin: 0 0 32 0;
+  margin: 0 0 32px 0;
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +75,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
-  letter-spacing: 0%;
   color: rgba(33, 33, 33, 0.7);
 }
 
@@ -87,7 +85,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  letter-spacing: 0%;
   color: rgba(33, 33, 33, 1);
   border: 1px solid rgba(33, 33, 33, 0.3);
   border-radius: 8px;

@@ -52,8 +52,10 @@
 
 .profile__edit-btn {
   display: flex;
+  margin-right: auto;
   margin-top: 0;
   background: none;
+  justify-content: flex-start;
   align-items: center;
   border: none;
   gap: 8px;
@@ -130,6 +132,7 @@
     width: 100%;
   }
   .profile__edit-btn {
+    margin-right: 0;
     justify-content: center;
     margin-bottom: 20px;
   }
