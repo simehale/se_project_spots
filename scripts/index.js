@@ -63,6 +63,8 @@ function handleAddCardSubmit(evt) {
 }
 
 editProfileBtn.addEventListener("click", function () {
+  profileNameInput.value = profileName.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
   editProfileModal.classList.add("modal_is-opened");
 });
 editProfileCloseBtn.addEventListener("click", function () {
