@@ -79,3 +79,10 @@ newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
+
+intitialCards.forEach(function (card) {
+  console.log(card.name);
+  console.log(card.link);
+})
+
+console.log(intitialCards);
