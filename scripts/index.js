@@ -1,4 +1,4 @@
-const intitialCards = [
+const initialCards = [
   {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
@@ -45,8 +45,8 @@ const addCardFormElement = newPostModal.querySelector(".modal__form");
 const cardCaptionInput = newPostModal.querySelector("#card-caption-input");
 const cardImageInput = newPostModal.querySelector("#card-image-input");
 
-//const newCardTitle = document.querySelector(".card__name");
-//const newCardImage = document.querySelector(".card__image");
+const cardTemplate = document.querySelector("#card-template");
+const cardsList = document.querySelector(".cards__list")
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened")
@@ -65,10 +65,27 @@ function handleProfileFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  console.log(cardCaptionInput.value);
-  console.log(cardImageInput.value);
+  const cardElement = getCardElement( {
+    name: cardCaptionInput.value,
+    link: cardImageInput.value,
+  });
+  cardsList.prepend(cardElement);
   closeModal(newPostModal);
+  initialCards.push({name: cardCaptionInput.value, link: cardImageInput.value});
 }
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.content.cloneNode(true);
+  const cardTitle = cardElement.querySelector(".card__title");
+  const cardImage = cardElement.querySelector(".card__image");
+
+  cardTitle.textContent = data.name;
+  cardImage.alt = data.name;
+  cardImage.src = data.link;
+
+  return cardElement;
+
+}  
 
 editProfileBtn.addEventListener("click", function () {
   profileNameInput.value = profileName.textContent;
@@ -86,11 +103,11 @@ newPostBtn.addEventListener("click", function () {
 newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
-addCardFormElement.addEventListener("submit", handleAddCardSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);  
 
-intitialCards.forEach(function (card) {
-  console.log(card.name);
-  console.log(card.link);
+initialCards.forEach((data) => {
+  let newCard = getCardElement(data);
+  cardsList.prepend(newCard);
 })
 
-console.log(intitialCards);
+console.log(initialCards);
