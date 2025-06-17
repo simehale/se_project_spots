@@ -46,7 +46,9 @@ const cardCaptionInput = newPostModal.querySelector("#card-caption-input");
 const cardImageInput = newPostModal.querySelector("#card-image-input");
 
 const cardTemplate = document.querySelector("#card-template");
-const cardsList = document.querySelector(".cards__list")
+const cardsList = document.querySelector(".cards__list");
+
+
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened")
@@ -78,11 +80,21 @@ function getCardElement(data) {
   const cardElement = cardTemplate.content.cloneNode(true);
   const cardTitle = cardElement.querySelector(".card__title");
   const cardImage = cardElement.querySelector(".card__image");
+  const cardLikeBtn = cardElement.querySelector(".card__like-btn");
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-btn")
 
+  cardLikeBtn.addEventListener("click", () => {
+    cardLikeBtn.classList.toggle("card__like-btn_active")
+  });
+
+  cardDeleteBtn.addEventListener("click", () => {
+    cardDeleteBtn.closest(".card").remove();
+  })
+  
   cardTitle.textContent = data.name;
   cardImage.alt = data.name;
   cardImage.src = data.link;
-
+  
   return cardElement;
 
 }  
@@ -104,6 +116,7 @@ newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);  
+
 
 initialCards.forEach((data) => {
   let newCard = getCardElement(data);
