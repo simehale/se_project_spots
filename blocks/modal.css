@@ -131,7 +131,7 @@
   border-radius: 8px;
   object-fit: contain;
   display: block;
-  width: auto;
+  width: 100%;
   cursor: auto;
   
 }
@@ -143,10 +143,21 @@
   border-radius: 8px;
   padding: 4px 8px;
   margin-top: 8px;
+  font-size: 20px;
 }
 
+@media screen and (max-width: 672px) {
+  .modal__image {
+    max-width: unset;
+  }
+  .modal__close-btn_white {
+    top: -48px;   
+    right: 0;
+  }
+}
 
 @media screen and (max-width: 480px) {
+  
   .modal__container {
     padding: 22px 12px 12px;
   }
@@ -168,15 +179,5 @@
   .modal__save-btn {
     max-width: 100%;
     margin-top: 24px;
-  }
-}
-
-@media screen and (max-width: 672px) {
-  .modal__image {
-    max-width: unset;
-  }
-  .modal__close-btn_white {
-    top: -48px;   
-    right: 0;
   }
 }
