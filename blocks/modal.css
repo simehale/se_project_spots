@@ -143,21 +143,23 @@
   border-radius: 8px;
   padding: 4px 8px;
   margin-top: 8px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 672px) {
   .modal__image {
     max-width: unset;
   }
-  .modal__close-btn_white {
-    top: -48px;   
-    right: 0;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  .modal__close-btn_white {
+     top: -48px;   
+    right: 0;
+  }
   .modal__container {
     padding: 22px 12px 12px;
   }
@@ -179,5 +181,8 @@
   .modal__save-btn {
     max-width: 100%;
     margin-top: 24px;
+  }
+  .modal__caption {
+    font-size: 16px;
   }
 }
