@@ -156,16 +156,16 @@
 }
 
 @media screen and (max-width: 480px) {
-  .modal__close-btn_white {
-     top: -48px;   
-    right: 0;
-  }
   .modal__container {
     padding: 22px 12px 12px;
   }
   .modal__close-btn {
     top: 22px;
     right: 12px;
+  }
+  .modal__close-btn_white {
+     top: -48px;   
+    right: 0;
   }
   .modal__title {
     font-size: 20px;
