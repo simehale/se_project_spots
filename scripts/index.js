@@ -83,7 +83,9 @@ function handleAddCardSubmit(evt) {
   });
   cardsList.prepend(cardElement);
   closeModal(newPostModal);
-  initialCards.push({name: cardCaptionInput.value, link: cardImageInput.value});
+  initialCards.push({name: cardCaptionInput.value, link: cardImageInput.value})
+  cardCaptionInput.value = "";
+  cardImageInput.value = "";
 }
 
 function getCardElement(data) {
