@@ -23,15 +23,11 @@
             alt="Photo of Bessie Coleman"
           />
           <div class="profile__column">
-            <h1 class="profile__name">
-              Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon
-              ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-            </h1>
-            <p class="profile__description">
-              Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
+            <h1 class="profile__name">Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon
+              ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
+            <p class="profile__description">Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
               singer, record producer, and entrepreneur. An influential figure
-              in modern world oooooooooooooooooooooooooooooooooooooooooooooooo
-            </p>
+              in modern world oooooooooooooooooooooooooooooooooooooooooooooooo</p>
             <button class="profile__edit-btn" type="button">
               <img src="./images/pencil-icon.svg" alt="pencil" />Edit Profile
             </button>
@@ -72,7 +68,10 @@
                 class="modal__input"
                 placeholder="Type your name"
                 required
+                minlength="2"
+                maxlength="40"
               />
+              <span id="profile-name-input-error" class="modal__error"></span>
             </label>
             <label for="profile-description-input" class="modal__label"
               >Description
@@ -81,7 +80,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
+                minlength="2"
+                maxlength="200"
               />
+              <span id="profile-description-input-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
           </form>
@@ -105,7 +108,9 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
+              <span id="card-image-input-error" class="modal__error"></span>
             </label>
             <label for="card-caption-input" class="modal__label"
               >Caption
@@ -114,7 +119,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
+                minlength="2"
+                maxlength="30"
               />
+              <span id="card-caption-input-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
           </form>
@@ -155,5 +164,6 @@
           </li>
     </template>
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/validation.js" defer></script>
   </body>
 </html>
