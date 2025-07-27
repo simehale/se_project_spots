@@ -158,13 +158,13 @@ modals.forEach((modal) => {
   document.addEventListener("keydown", function (evt) {
     if (evt.key === "Escape") {
       closeModal(modal);
-    }
+    };
   });
 
   modal.addEventListener("click", function (evt) {
     if (evt.target === evt.currentTarget) {
       closeModal(modal);
-    }
+    };
   });
 });
 

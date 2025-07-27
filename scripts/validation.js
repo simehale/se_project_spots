@@ -5,7 +5,7 @@ const settings = {
   inactiveButtonClass: "modal__save-btn_inactive",
   inputErrorClass: "modal__input_type_error",
   errorClass: "modal__error"
-}
+};
 
 const showInputError = (formEl, inputEl, errorMsg, config) => {
   const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
@@ -23,7 +23,7 @@ const checkInputValidity = (formEl, inputEl, config) => {
     showInputError(formEl, inputEl, inputEl.validationMessage, config);
   } else {
     hideInputError(formEl, inputEl, config);
-    }
+    };
 };
 
 const hasInvalidInput = (inputList) => {
@@ -38,7 +38,7 @@ const toggleButtonState = (inputList, buttonEl, config) => {
   } else {
     buttonEl.disabled = false;
     buttonEl.classList.remove(config.inactiveButtonClass)
-  }
+  };
 };
 
 const disableButton = (buttonEl, config) => {
@@ -50,7 +50,7 @@ const resetValidation = (formEl, inputList, config) => {
   inputList.forEach((inputEl) => {
     hideInputError(formEl, inputEl, config);
   });
-}
+};
 
 const setEventListeners = (formEl, config) => {
     const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
