@@ -45,22 +45,23 @@
   background: none;
   padding: 0;
   cursor: pointer;
-  opacity: 40%;
+  opacity: 0.4;
+}
+
+.modal__close-btn:hover {
+  opacity: 1;
 }
 
 .modal__close-btn_white {
   position: absolute;
   right: -50px;
   top: 0;
-  opacity: 100%;
+  opacity: 1;
 }
 .modal__close-btn_white:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
-.modal__close-btn:hover {
-  opacity: 100%;
-}
 
 .modal__title {
   margin: 0;
@@ -109,7 +110,7 @@
 
 .modal__input::placeholder {
   color: #212121;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal__input:hover {
@@ -137,11 +138,11 @@
 }
 
 .modal__save-btn:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .modal__save-btn_inactive {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .modal__image-container {
