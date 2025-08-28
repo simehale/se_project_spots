@@ -106,9 +106,7 @@ function closeModal(modal) {
     cardImage.addEventListener("click", () => {
       previewImage.src = data.link;
       previewCaption.textContent = data.name;
-      console.log("Setting image src to:", data.link);
       openModal(previewModal);
-      console.log("Image element:", previewImage);
     });
     
     
