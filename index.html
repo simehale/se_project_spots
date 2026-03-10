@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -23,11 +23,15 @@
             alt="Photo of Bessie Coleman"
           />
           <div class="profile__column">
-            <h1 class="profile__name">Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon
-              ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
-            <p class="profile__description">Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
+            <h1 class="profile__name">
+              Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon
+              ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+            </h1>
+            <p class="profile__description">
+              Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
               singer, record producer, and entrepreneur. An influential figure
-              in modern world oooooooooooooooooooooooooooooooooooooooooooooooo</p>
+              in modern world oooooooooooooooooooooooooooooooooooooooooooooooo
+            </p>
             <button class="profile__edit-btn" type="button">
               <img src="./images/pencil-icon.svg" alt="pencil" />Edit Profile
             </button>
@@ -41,9 +45,7 @@
           </button>
         </section>
         <section class="cards page__section">
-          <ul class="cards__list">
-           
-          </ul>
+          <ul class="cards__list"></ul>
         </section>
       </main>
       <footer class="footer page__section">
@@ -84,7 +86,10 @@
                 minlength="2"
                 maxlength="200"
               />
-              <span id="profile-description-input-error" class="modal__error"></span>
+              <span
+                id="profile-description-input-error"
+                class="modal__error"
+              ></span>
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
           </form>
@@ -138,32 +143,21 @@
               alt="exit"
             />
           </button>
-          <img
-              class="modal__image"
-              src="#"
-              alt=""
-          />
+          <img class="modal__image" src="#" alt="" />
           <p class="modal__caption"></p>
         </div>
       </div>
     </div>
     <template class="card-template" id="card-template">
       <li class="card">
-        <button class="card__delete-btn" type="button"> 
-        </button>
-        <img
-              class="card__image"
-              src="#"
-              alt=""
-            />
-            <div class="card__content">
-              <h2 class="card__title"></h2>
-              <button class="card__like-btn" type="button">
-              </button>
-            </div>
-          </li>
+        <button class="card__delete-btn" type="button"></button>
+        <img class="card__image" src="#" alt="" />
+        <div class="card__content">
+          <h2 class="card__title"></h2>
+          <button class="card__like-btn" type="button"></button>
+        </div>
+      </li>
     </template>
-    <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/validation.js" defer></script>
+    <script type="module" src="./scripts/index.js" defer></script>
   </body>
 </html>
