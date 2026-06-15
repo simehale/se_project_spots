@@ -155,11 +155,18 @@
     </div>
     <template class="card-template" id="card-template">
       <li class="card">
-        <button class="card__delete-btn" type="button"></button>
+        <button class="card__delete-btn" type="button">
+          <img
+            src="<%=require('./images/delete-btn-default.svg')%>"
+            alt="delete"
+          />
+        </button>
         <img class="card__image" src="#" alt="" />
         <div class="card__content">
           <h2 class="card__title"></h2>
-          <button class="card__like-btn" type="button"></button>
+          <button class="card__like-btn" type="button">
+            <img src="<%=require('./images/like-icon.svg')%>" alt="like" />
+          </button>
         </div>
       </li>
     </template>
